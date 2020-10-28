@@ -15,11 +15,23 @@ public class EmployeeController {
      EmployeeService employeeService;
      //     EmployeeServiceImpl employeeService;
 
+     /*
+     * 查询全部信息
+     * */
      @RequestMapping("select" )
      public List<Employee> selectAllEmployee() {
           List<Employee> employees = employeeService.selectAllEmployee();
           System.out.println("controller:"+employees);
           return employees;
+     }
+     /*
+      * 删除
+      * */
+     @RequestMapping("delete" )
+     public int deleteById(int id) {
+          int i = employeeService.deleteById(id);
+          System.out.println("controller:"+i);
+          return i;
      }
      /*
       * 测试ssm整合
