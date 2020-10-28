@@ -12,6 +12,4 @@ public class Employee {
      private String phone;    //电话
      private String passworde;//密码
 
-     public Employee() {
-     }
 }
