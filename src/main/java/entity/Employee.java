@@ -9,6 +9,12 @@ import javax.validation.constraints.NotNull;
 
 @Data
 public class Employee {
+     /*
+     *  数据校验
+     *  @NotBlank
+     * @Min(value = 1)
+     * @Max(value=100)
+     * */
      private int id;           //id
      @NotBlank(message = "姓名不能为空")
      private String name;      //员工姓名

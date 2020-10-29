@@ -38,6 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
      /*
      * 修改
+     * name="phone",required = true  数据校验
      * */
      @Override
      public int update(@RequestParam(name="phone",required = true) String phone) {
